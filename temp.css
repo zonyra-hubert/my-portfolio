@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('bg.WebP'); /* Background Image */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 100%;
+}
+
+.profile {
+    width: 90%;
+    max-width: 300px;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.pic {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.name {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.discription {
+    width: 90%;
+    max-width: 500px;
+    background-color: rgba(0, 0, 0, 0.651);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.discription p {
+    margin: 10px 0;
+}
+
+
+/* Social Media Icons */
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    font-size: 25px;
+    color: white;
+    background-color: #1e3c72; /* Gradient start color */
+    background: radial-gradient(circle, #1e3c72 0%, #2a5298 100%); /* Radial gradient background */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    
+}
+
+.social-media a:hover {
+    background: #25D366; /* Hover effect (change to the platform's brand color, like WhatsApp green) */
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Ensuring icons adjust well on smaller screens */
+@media (max-width: 480px) {
+    .social-media a {
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+    }
+}
+a{
+    text-decoration: none;
+    
+}
+.email, .list,num{
+text-decoration: none;
+
+}
+.list{
+    color: #3af008e7;
+    text-align: center;
+}
+.email, .num{
+    color: #fff;
+}
